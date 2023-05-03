@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <img src="capagrupoII.png" class="capa" alt="Imagem">
+  <link rel ="stylesheet" href="style.css">
+  <title>HTML e CSS </title>      
+ <head>
+
+         
+ <body>
+
+ <nav>
+  <ul style = "background-color: #99074b";>
+   <img src="">
+   <li> <a href="index.html"> Introdução - HTML</a> </li>
+   <li> <a href="tags.html"> Tags - HTML </a> </li>
+   <li> <a class="active" href="tabelas.html"> Tabelas - HTML </a> </li>
+   <li> <a href="listas.html"> Listas - HTML </a> </li>
+   <li> <a href="introducaocss.html"> Introdução - CSS </a> </li>
+   <li> <a href="utilizacao.html"> Utilização - CSS </a> </li>
+   <li> <a href="boxmodel.html"> Box model - CSS </a> </li>
+  </ul>   
+ </nav>
+
+ <center><h1> Tabelas HTML </h1></center>
+
+        <!--estrutura-->
+        <h1>Tabelas</h1> <!--Título-->
+        <p>As tabelas em HTML permitem que os desenvolvedores organizem os dados em linhas e colunas. 
+            A estrutura da tabela é feita entre as tags "&lt table &gt" e "&lt /table &gt". </p>
+        <pre>
+           &lt;!DOCTYPE>
+           &lt;html> 
+            <strong>&lt;table></strong>
+                ..... 
+                .....         
+            <strong>&lt;/table></strong>
+           &lt;/html>
+        </pre>
+
+          <br><br>
+
+        <!--Linhas e colunas-->
+        <h3>linhas e colunas</h3> <!--subtítulo-->
+        <p>As linhas da tabela começam com "&lt tr &gt" e terminam com "&lt /tr &gt". Mas utilizando somente a tag, ela
+            não irá funcionar sozinha. Então é utilizado a tag "&lt td &gt" e "&lt /tr &gt" para definir as células da
+            tabela que é onde fica o conteúdo. Pode-se ter quantas linhas for preciso, contanto que a quantidade de células
+            tenha a mesma quantidade em cada linha  </p>
+
+
+        <h4>Exemplo:</h4>
+        <pre>
+            &lt;!DOCTYPE html>
+            &lt;html>  
+              &lt;table>
+               <strong>&lt;tr></strong>
+                <strong>&lt;td></strong> abc <strong>&lt;/td></strong>
+                <strong>&lt;td></strong> def <strong>&lt;/td></strong>               
+               <strong>&lt;tr></strong>
+               <br>
+               <strong>&lt;tr></strong>
+                <strong>&lt;td></strong> 123 <strong>&lt;/td></strong>
+                <strong>&lt;td></strong> 456 <strong>&lt;/td></strong>               
+              <strong>&lt;tr></strong>          
+              &lt;/table>
+            &lt;/html>
+        </pre>
+        <p>Dessa forma terá duas células.</p>
+        <br>
+
+       
+        <table>
+        <tr>
+        <td>abc</td>
+        <td>def</td>
+        </tr>
+
+        <tr>
+            <td>123</td>
+            <td>456</td>
+        </tr>
+        </table>
+        <br>
+
+        
+
+        <!--Cabeçalho da tabela-->
+        <h3>Cabeçalho</h3>
+        <p>Para cabeçalhos na tabela utiliza-se o "&lt th &gt" abrir  e "&lt /th &gt"para fechar em vez de "&lt td &gt" e
+            "&lt /td &gt". Pois desta forma os elementos da célula ficam em negrito e centralizados. Porém podem ser
+            modificados com CSS.</p>
+
+        <h4>Exemplo:</h4>
+            <pre>
+                &lt;!DOCTYPE html &gt
+                &lt;html>
+                 &lt;table>
+                  &lt;tr>
+                    <strong>&lt;th></strong> abc <strong>&lt;/th></strong>
+                    <strong>&lt;th></strong> def <strong>&lt;/th></strong>
+                  &lt;/tr>
+        
+                  &lt;tr>
+                    &lt;td> 123 &lt;/td>
+                    &lt;td> 456 &lt;/td>
+                  &lt; /tr>         
+                 &lt;/table>
+                &lt;/html>
+            </pre>
+             <br>
+          
+             <table>
+             <tr>
+             <th>abc</th>
+             <th>def</th>
+             </tr>
+     
+             <tr>
+                 <td>123</td>
+                 <td>456</td>
+             </tr>
+             </table>
+            
+            <br><br>
+            
+            <center><strong>Onde cada tag se aplica:</strong></center>
+            <center><img src="tabela2.png"></center>
+            <br><br>
+
+        <!--Bordas-->
+        <h3>Borda</h3>
+        <p>As tabelas html podem conter bordas de diferentes estilos.</p>
+        <p>Ao adicionar bordas em uma tabela, você adiciona bordas em volta de cada célula. Para 
+            adiciona-lá é preciso adicionar o atributo "border" propriedade CSS nos elementos "table",
+            "th" e "td"</p>
+
+            <pre>
+            &lt;!DOCTYPE html &gt
+                &lt;html>
+                 <strong>&lt;head>
+                    &lt;style>
+                        table, th, td {
+                          border: 2px solid rgb(192, 107, 181);
+                        }
+                    &lt;/style>
+                 &lt;/head></strong>
+
+                 &lt;table>
+                  &lt;tr>
+                    &lt;th> abc &lt;/th>
+                    &lt;th> def &lt;/th>
+                  &lt;/tr>
+        
+                  &lt;tr>
+                    &lt;td> 123 &lt;/td>
+                    &lt;td> 456 &lt;/td>
+                  &lt; /tr>         
+                 &lt;/table>
+                &lt;/html>
+            </pre>
+            <br><br>
+                   
+                <table class="tabelaV">
+                  <tr>
+                    <th class="tabelaV"> abc </th>
+                    <th class="tabelaV"> def </th>
+                  </tr>
+        
+                  <tr>
+                    <td class="tabelaV"> 123 </td>
+                    <td class="tabelaV"> 456 </td>
+                  </tr>         
+                </table>
+                <br><br>
+                
+        <h3>Borda recolhida</h3>
+        <p>No HTML, para retirarmos as bordas duplas (como no exemplo acima), devemos definir a 
+            "border-collapse", que é uma propriedade CSS como collapse. </p>
+            
+            <p> Exemplo de como fazer a tabela ficará com esse processo:</p>
+
+            <pre>
+            &lt;!DOCTYPE html &gt
+                &lt;html>
+                 &lt;head>
+                    &lt;style>
+                        table, th, td {
+                          border: 2px solid rgb(192, 107, 181);
+                          <strong>border-collapse: collapse;</strong>
+                        }
+                    &lt;/style>
+                 &lt;/head>
+
+                 &lt;table>
+                  &lt;tr>
+                    &lt;th> abc &lt;/th>
+                    &lt;th> def &lt;/th>
+                  &lt;/tr>
+        
+                  &lt;tr>
+                    &lt;td> 123 &lt;/td>
+                    &lt;td> 456 &lt;/td>
+                  &lt; /tr>         
+                 &lt;/table>
+                &lt;/html>
+            </pre>
+            <br><br>
+            
+            <table class="tabelaVI">
+                <tr>
+                  <th class="tabelaVI"> abc </th>
+                  <th class="tabelaVI"> def </th>
+                </tr>
+      
+                <tr>
+                  <td class="tabelaVI"> 123 </td>
+                  <td class="tabelaVI"> 456 </td>
+                </tr>         
+              </table>
+              <br><br>
+
+
+        <!--Preenchimento e espaçamento-->
+        <h3>Preenchimento</h3> 
+        <p>O preenchimento da célula é o espaço entre o conteúdo e as bordas da célula. O padrão definido é 0 pixel.
+            Para adicionar o preenchimento de células, utilize o "padding" propriedade CSS. </p>
+
+            <pre>
+                &lt;!DOCTYPE html &gt
+                    &lt;html>
+                     &lt;head>
+                        &lt;style>
+                            table, th, td {
+                              border: 2px solid rgb(192, 107, 181);
+                            }
+                            <strong>
+                                th, td{
+                                padding: 30px;
+                            }
+                            </strong>
+                        &lt;/style>
+                     &lt;/head>
+    
+                     &lt;table>
+                      &lt;tr>
+                        &lt;th> abc &lt;/th>
+                        &lt;th> def &lt;/th>
+                      &lt;/tr>
+            
+                      &lt;tr>
+                        &lt;td> 123 &lt;/td>
+                        &lt;td> 456 &lt;/td>
+                      &lt; /tr>         
+                     &lt;/table>
+                    &lt;/html>
+                </pre>
+                
+                 <table class="tabelaVII">
+                  <tr>
+                    <th class="tabelaVII"> abc </th>
+                    <th class="tabelaVII"> def </th>
+                  </tr>
+        
+                  <tr>
+                    <td class="tabelaVII"> 123 </td>
+                    <td class="tabelaVII"> 456 </td>
+                  </tr>         
+                 </table>
+                 <br>
+
+        <p>Para adicionar preenchimento somente acima do conteúdo, use a "padding-top" propriedade.</p>
+        <p>E os outros lados com as propriedades " padding-bottom ", " padding-left " e " padding-right"</p>
+
+        <p>Exemplo de como fazer a tabela ficar com esse processo:</p>      
+         
+        <p>th, td {<br>
+            padding-top: 10px;<br>
+            padding-bottom: 20px;<br>
+            padding-left: 30px;<br>
+            padding-right: 40px;<br>
+        }
+      </p>
+          <br><br>
+          
+        <h3>Espaçamento</h3>
+        <p>O espaçamento das células é o espaço entre as telas. o padrão definido é de 2 pixels. Para 
+            alterar esse espaço, utilize "border-spacing" propriedade CSS no "table" elemento.</p>
+        
+            <pre>
+                &lt;!DOCTYPE html &gt
+                    &lt;html>
+                     &lt;head>
+                        &lt;style>
+                            table, th, td {
+                              border: 2px solid rgb(192, 107, 181);
+                            }
+                            <strong>
+                            table {
+                                border-spacing: 30px;
+                                }
+                            </strong>
+                        &lt;/style>
+                     &lt;/head>
+    
+                     &lt;table>
+                      &lt;tr>
+                        &lt;th> abc &lt;/th>
+                        &lt;th> def &lt;/th>
+                      &lt;/tr>
+            
+                      &lt;tr>
+                        &lt;td> 123 &lt;/td>
+                        &lt;td> 456 &lt;/td>
+                      &lt; /tr>         
+                     &lt;/table>
+                    &lt;/html>
+                </pre>
+                
+                 <table  class="tabelaVIII">
+                  <tr>
+                    <th class="tabelaVIII"> abc </th>
+                    <th class="tabelaVIII"> def </th>
+                  </tr>
+        
+                  <tr>
+                    <td class="tabelaVIII"> 123 </td>
+                    <td class="tabelaVIII"> 456 </td>
+                  </tr>         
+                 </table>  
+
+                 <br><br>
+
+                 <footer>
+                  <a> IFBA 2023 </a>
+               </footer>
+               <footer>
+                <a href="https://www.w3schools.com"> Referência: https://www.w3schools.com </a>
+               </footer>
+        
+
+  </body>
+
+<html>

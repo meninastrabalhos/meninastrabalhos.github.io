@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <img src="capagrupoII.png" class="capa" alt="Imagem">
+  <link rel ="stylesheet" href="style.css">
+  <title>HTML e CSS </title>      
+</head>
+
+         
+<body>
+
+  <nav>
+   <ul style = "background-color: rgb(153, 7, 75)";>
+    <img src="">
+    <li> <a href="index.html"> Introdução - HTML</a> </li>
+    <li> <a href="tags.html"> Tags - HTML </a> </li>
+    <li> <a href="tabelas.html"> Tabelas - HTML </a> </li>
+    <li> <a href="listas.html"> Listas - HTML </a> </li>
+    <li> <a href="introducaocss.html"> Introdução - CSS </a> </li>
+    <li> <a href="utilizacao.html"> Utilização - CSS </a> </li>
+    <li> <a class="active" href="boxmodel.html"> Box model - CSS </a> </li>
+   </ul>   
+  </nav>
+
+  <center><h1> Box model CSS </h1></center>
+
+  <h3>Box Model(Modelo de Caixa)</h3>
+  <p>O modelo de caixa CSS (Box Model) é essencialmente uma caixa que envolve cada elemento HTML.</p>
+  <p>Ele possui: margens, bordas, preenchimento e o conteúdo real. A imagem abaixo ilustra esse modelo:</p>
+  <img class="centro" src="boxmodel.png" style="width:380px;height:240px;">
+
+  <ol>
+   <li class="lista">Conteúdo(Content): é onde aparecem textos e imagens.</li>
+   <li class="lista">Preenchimento(Padding): Limpa uma área ao redor do conteúdo. O padding é transparente.</li>
+   <li class="lista">Borda(Border): ela contorna o preenchimento e o conteúdo.</li>
+   <li class="lista">Margem(Margin): Limpa uma área fora da borda. A margem é transparente.</li>
+  </ol>
+
+  <p>O modelo de caixa nos permite adicionar uma borda ao redor dos elementos e definir o espaço entre eles.</p>
+  <p>Exemplo usando box model:</p>
+  <pre>
+     &lt;!DOCTYPE html>
+     &lt;html>
+         &lt;head>
+             &lt;style>
+                 p{
+                     width: 320px;
+                     padding: 10px;
+                     border: 5px solid orange;
+                     margin: 5px;
+                     background-color: pink;
+                 }
+             &lt;/style>
+         &lt;/head>  
+         &lt;body>
+         &lt;p>Conteúdo do Box Model&lt;/p>    
+         &lt;/body>
+     &lt;/html>
+  </pre>
+  <p>Resultado do exemplo acima:</p>
+  <img class="centro" src="exboxmodel.png" style="width:300px;height:80px">
+  <small><p>obs: Para calcular o tamanho total de um elemento, também é necessário adicionar preenchimento, bordas e margens.</p></small>
+
+  <br><br>
+
+          <footer>
+          <a> IFBA 2023 </a>
+       </footer>
+       <footer>
+        <a href="https://www.w3schools.com"> Referência: https://www.w3schools.com </a>
+       </footer>
+
+
+</body>
+
+<html>

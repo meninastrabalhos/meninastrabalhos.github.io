@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+	 <img src="capagrupoII.png" class="capa" alt="Imagem">
+     <link rel ="stylesheet" href="style.css">
+     <title>HTML e CSS </title> 
+    
+	</head>
+
+	<body>
+
+        <nav>
+            <ul style = "background-color: #99074b";>
+             <img src="">
+             <li> <a href="index.html"> Introdução - HTML</a> </li>
+             <li> <a class="active" href="tags.html"> Tags - HTML </a> </li>
+             <li> <a href="tabelas.html"> Tabelas - HTML </a> </li>
+             <li> <a href="listas.html"> Listas - HTML </a> </li>
+             <li> <a href="introducaocss.html"> Introdução - CSS </a> </li>
+             <li> <a href="utilizacao.html"> Utilização - CSS </a> </li>
+             <li> <a href="boxmodel.html"> Box model - CSS </a> </li>
+            </ul>   
+        </nav>
+
+        <center><h1> Tags em HTML </h1></center>
+
+<h2> O que é uma tag? </h2>
+    <p> As tags são marcadores usados para delimitar secões de um documento HTML. Podemos fazer a sintaxe de uma tag HTML utilizando os símbolos: <> </p>
+    <p> Além disso, outro ponto importante para destacar é que em alguns casos nós devemos declarar as tags em pares, ou seja, ao declará-las devemos abrir e fechar o escopo.</p>
+    <p> Exemplo: Ao declararmos a tag de paragráfo, escrevemos da seguinte maneira: </p>
+    <pre>
+        &lt;p> &lt;/p>
+    </pre>
+
+<br>
+<h2> Como iniciar uma página em HTML?</h2>
+    <p> Ao iniciar uma página em HTML é importante que lembremos de inserir a declaração: </p>
+    <pre>
+        &lt;!DOCTYPE html>
+    </pre>
+    <p> Mas afinal, por que isso é importante? É importante para que o navegador consiga identificar o tipo de documento que ele irá interpretar.</p>
+    <p> Além disso, outro ponto importante é que o conteúdo da página deve estar entre: </p>
+    <pre>
+        &lt;html> &lt;/html>
+    </pre>
+
+<br>
+<h2> Como fazer um cabeçalho em HTML?</h2>
+    <p> Para fazer um cabeçalho em HTML utilizamos as tags:</p>
+    <pre>
+        &lt;head> &lt;/head>
+    </pre>
+    <p> O cabeçalho é um espaço que conterá as informações iniciais da página, por exemplo, título e sub título.</p>
+
+<br>
+<h2> Como delimitar o escopo da página?</h2>
+    <p> O escopo da página (corpo) pode ser delimitado por meio da tag:</p>
+    <pre>
+        &lt;body> &lt;/body>
+    </pre>
+    <p> Esse elemento define o corpo do documento e é um recipiente para todos os conteúdos visíveis, como parágrafos, imagens, vídeos, hiperlinks, tabelas, listas, etc.</p>
+
+<br>
+<h2> Como fazer comentários em HTML?</h2>
+    <p> Em HTML os comentários são feitos usando: </p>
+    <pre>
+        &lt;!--Comentário-->
+    </pre>
+
+<br>
+<h2> Como quebrar uma linha em HTML? </h2>
+    <p> A quebra de linha, também conhecida como retorno suave, possui a mesma funcionalidade do recurso "enter", ou seja, serve para começar uma nova linha sem iniciar um novo parágrafo.</p>
+    <pre>
+        &lt;br> 
+    </pre>
+
+<br>
+<h2> Como fazer um parágrafo em HTML?</h2>
+    <p> A tag utilizada para fazermos um parágrafo é:</p>
+    <pre>
+        &lt;p> &lt;/p>
+    </pre>
+
+<br>
+<h2> Como colocar o meu texto em estilo de cabeçalho (título)?</h2>
+    <p> Há 6 diferentes tamanhos que podem adicionados, quanto menor o número, maior a fonte.</p>
+    <P> Por exemplo: A maior fonte disponível é adicionado por meio da tag h1, a menor tag disponível é adicionada por meio da tag h6.</P>
+    <p> A tag utilizada é:</p>
+    <pre>
+        &lt;h2> &lt;/h2>
+    </pre>
+<br>
+<h2> Como inserir imagens na página?</h2>
+    <p> Para melhorar a estética do site ou para fins informativos, podemos adicionar imagens na página e isso é feito por meio da tag:</p>
+    <p> A tag utilizada é:</p>
+    <pre>
+        &lt;img src="arquivo-imagem"> 
+    </pre>
+
+<br>
+<h2> Como criar hiperlinks na página? </h2>
+    <p> Para que servem o link? Servem para que ao clicar nele, o usuário seja encaminhado para outra página. Em HTML links são hiperlinks.</p>
+    <p> A tag utilizada é:</p>
+    <pre>
+        &lt;a href="link"> Texto &lt;/a>
+    </pre>
+
+<br>
+<h2> Como inserir uma pequena imagem na guia da página?</h2>
+    <p> As imagens inseridas podem ser de autoria própria ou baixadas gratuitamente em algum outro site.</p>
+    <p> A tag utilizada é:</p>
+    <pre>
+        &lt;link rel="icon" href="image-file" type="image/x-icon">
+    </pre>
+
+<br>
+<center><h1> Formatação de texto com semântica HTML:</h1></center>
+
+<br>
+<h3> Texto em negrito:</h3>
+    <pre>
+        &lt;strong> &lt;/strong>
+    </pre>
+    <p>Exemplo: <strong> Programação web</strong></p>
+
+<h3> Texto em itálico:</h3>
+    <pre>
+        &lt;em> &lt;/em>
+    </pre>
+    <p>Exemplo: <em>Programação web</em></p>
+
+<h3> Texto marcado:</h3>
+    <pre>
+        &lt;mark> &lt;/mark>
+    </pre>
+    <p>Exemplo: <mark> Programação web</mark></p>
+
+<h3> Texto desconsiderado:</h3>
+    <pre>
+        &lt;del> &lt;/del>
+    </pre>
+    <p>Exemplo: <del> Programação web</del></p>
+
+<h3> Texto sublinhado:</h3>
+    <pre>
+        &lt;ins> &lt;/ins>
+    </pre>
+    <p>Exemplo: <ins> Programação web</ins></p>
+
+<h3> Adicionar endereço:</h3>
+    <pre>
+        &lt;endereço> &lt;/endereço>
+    </pre>
+
+<h3> Texto subescrito:</h3>
+    <pre>
+        &lt;sub> &lt;/sub>
+    </pre>
+    <p>Exemplo: <sub> Programação web</sub></p>
+
+<h3> Texto sobescrito:</h3>
+    <pre>
+        &lt;sup> &lt;/sup>
+    </pre>
+    <p>Exemplo: <sup> Programação web</sup></p>
+
+<h3> Texto citado:</h3>
+    <pre>
+        &lt;q> &lt;/q>
+    </pre>
+    <p>Exemplo: <q> Programação web</q></p>
+
+<h3> Texto citado (outra opção):</h3>
+    <pre>
+        &lt;blockquote> &lt;/blockquote>
+    </pre>
+
+<h3> Explicar informações do texto (palavras difíceis e abreviações):</h3>
+    <pre>
+        &lt;abbr title="Explicação do texto"> ABBR &lt;/abbr> 
+    </pre>
+    <p>Exemplo: <abbr title="Programação Web"> PW </abbr>
+
+<h3> Texto invertido:</h3>
+    <pre>
+        &lt;bdo dir="rtl"> invertido &lt;/bdo>
+    </pre>
+    <p>Exemplo: <bdo dir="rtl"> programação web </bdo>
+    <p> O "rtl" serve para indicar que o texto deverá ser escrito da direita para a esquerda.</p>
+     
+    <br><br>
+
+            <footer>
+          <a> IFBA 2023 </a>
+       </footer>
+       <footer>
+        <a href="https://www.w3schools.com"> Referência: https://www.w3schools.com </a>
+       </footer>
+
+    
+    </body>
+
+</html>

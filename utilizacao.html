@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+	 <img src="capagrupoII.png" class="capa" alt="Imagem">
+     <link rel ="stylesheet" href="style.css">
+     <title>HTML e CSS </title> 
+    
+	</head>
+
+	<body>
+
+        <nav>
+            <ul style = "background-color: #99074b";>
+             <img src="">
+             <li> <a href="index.html"> Introdução - HTML</a> </li>
+             <li> <a href="tags.html"> Tags - HTML </a> </li>
+             <li> <a href="tabelas.html"> Tabelas - HTML </a> </li>
+             <li> <a href="listas.html"> Listas - HTML </a> </li>
+             <li> <a href="introducaocss.html"> Introdução - CSS </a> </li>
+             <li> <a class="active" href="utilizacao.html"> Utilização - CSS </a> </li>
+             <li> <a href="boxmodel.html"> Box model - CSS </a> </li>
+            </ul>   
+        </nav>
+
+        <center><h1> Formas de utilização do CSS </h1></center>
+
+        <h3>Existem três maneiras de inserir o CSS:<h3>
+        <ol>
+            <li class="lista">Externo</li>
+            <li class="lista">Interno</li>
+            <li class="lista">Embutido</li>
+        </ol> 
+        
+        <h3>CSS Externo</h3>
+        <p>Para inserir o CSS de maneira externa, é necessário criar um arquivo que seja "index.css"</p>
+        <p>Na página HTML deve-se referenciar esse arquivo dentro do elemento "link" e dentro da seção "head" </p>
+        <p>Exemplo da página HTML:</p>
+        <pre>
+	&lt;!DOCTYPE html>
+        &lt;html>
+            &lt;head>
+                &lt;link rel="stylesheet" href="mystyle.css">  ->local onde deve referenciar o arquivo "index.css"
+            &lt;/head>  
+            &lt;body>
+            &lt;/body>
+        &lt;/html>
+        </pre>    
+
+        <p>Na folha de estilo externa não pode ter tags HTML</p>
+		<p>Nela é possível alterar a aparência de um site inteiro alterando apenas seu arquivo</p>
+        <p>Exemplo:</p>
+        <pre>
+            body{
+                background-color: red;
+            }
+
+            p{
+                color: blue;
+            }
+        </pre> 
+        
+        <h3>CSS Interno</h3>
+        <p>O estilo interno é definido dentro do elemento "style", dentro da seção head</p>
+        <p>Veja o exemplo a seguir:</p>
+        <pre>
+                &lt;!DOCTYPE html>
+                    &lt;html>
+                        &lt;head>
+                            &lt;style>
+                                body{
+                                    background-color: red;
+                                }
+                      
+                                p{
+                                color: blue;
+                                margin-left: 35px;
+                                }
+                            &lt;/style>
+                        &lt;/head>  
+                        &lt;body>
+                            &lt;p>Isto é um parágrafo&lt;/p>
+                        &lt;/body>
+                    &lt;/html>
+        </pre>
+        
+        <h3>CSS Embutido</h3>
+        <p>Um estilo embutido pode ser usado para aplicar um estilo único a um único elemento.</p>
+        <p>Para usar estilos embutidos, adicione o atributo style ao elemento relevante. O atributo style pode conter qualquer propriedade CSS.</p>
+        <p>Exemplo de CSS embutido:</p>
+        <pre>
+            &lt;!DOCTYPE html>
+            &lt;html>
+                    &lt;head>
+                    &lt;/head>  
+                    &lt;body>
+                        &lt;h1 style="color:green;text-align:center;">Isto é um cabeçalho&lt;/h1>
+                        &lt;p style="color:black;">Isto é um parágrafo&lt;/p>
+                    &lt;/body>
+            &lt;/html>
+        </pre> 
+
+        <br><br>
+
+        <footer>
+          <a> IFBA 2023 </a>
+       </footer>
+       <footer>
+        <a href="https://www.w3schools.com"> Referência: https://www.w3schools.com </a>
+       </footer>
+
+  
+
+
+	</body>
+
+</html>
